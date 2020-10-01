@@ -46,7 +46,7 @@ test("App fetches and renders data", async () => {
     fireEvent.mouseDown(dropdown);
     const season = getByText(/Season 5/i);
     fireEvent.click(season);
-    render(<Episodes episodes={mockEpisodes}/>);
+   
     const episodes = getByTestId(/episodes/i);
 
     expect(episodes).toBeInTheDocument();
